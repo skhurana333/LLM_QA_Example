@@ -35,7 +35,6 @@ llm = HuggingFaceHub(repo_id="google/flan-t5-xl", model_kwargs={"temperature": 0
 # document loaders - https://python.langchain.com/en/latest/modules/indexes/document_loaders.html
 print("from text document")
 loader = DirectoryLoader("data/", glob="**/*.txt" )
-
 documents = loader.load()
 
 # https://python.langchain.com/en/latest/modules/indexes.html 
